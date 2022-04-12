@@ -1,0 +1,77 @@
+.keyboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5%;
+}
+.keyboardrow {
+    display: flex;
+    justify-content: center;
+}
+.key {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: gray;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    align-items: center;
+    margin: 3px;
+}
+.key:active{
+    background-color: rgb(129, 133, 137);
+}
+.backspace {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: gray;
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    align-items: center;
+    margin: 3px;
+}
+.backspace:active{
+    background-color: rgb(129, 133, 137);
+}
+.enter {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: gray;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    align-items: center;
+    margin: 3px;
+}
+.enter:active{
+    background-color: rgb(129, 133, 137);
+}
+@media only screen and (max-width: 600px) {
+    .key {
+        height: 30px;
+        width: 30px;
+        margin: 2px;
+    }
+    .backspace {
+        width: 40px;
+        height: 30px;
+    }
+    .enter {
+        height: 30px;
+        width: 50px;
+    }
+
+}

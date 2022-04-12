@@ -1,0 +1,34 @@
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+.mainMenu {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+.mainMenu ul {
+    padding: 0;
+    list-style: none;
+
+}
+.mainMenu li {
+    margin: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    text-align:center;
+    font-size: 35px;
+}
+.mainMenu ul :hover {
+    background-color: gray;
+    cursor: pointer;
+}
+.mainMenu a {
+    color:black;
+}
+.mainMenu a:link {
+    text-decoration: none;
+    
+    
+}

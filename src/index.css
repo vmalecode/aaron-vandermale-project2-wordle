@@ -1,0 +1,112 @@
+
+.Grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  width: fit-content;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.game {
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.letterBox {
+  width: 62px;
+  height: 62px;
+  border:solid;
+  border-color: grey;
+  border-width: 1px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+  font-size: 40px;
+  /* background-color: #cc0000; */
+}
+
+.greenBox {
+  width: 62px;
+  height: 62px;
+  border:solid;
+  border-color: grey;
+  border-width: 1px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+  font-size: 40px;
+  background-color: green;
+}
+.yellowBox {
+  width: 62px;
+  height: 62px;
+  border:solid;
+  border-color: grey;
+  border-width: 1px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+  font-size: 40px;
+  background-color: yellow;
+}
+.greyBox {
+  width: 62px;
+  height: 62px;
+  border:solid;
+  border-color: grey;
+  border-width: 1px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+  font-size: 40px;
+  background-color: grey;
+}
+
+.redBox {
+  width: 62px;
+  height: 62px;
+  border:solid;
+  border-color: grey;
+  border-width: 1px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+  font-size: 40px;
+  background-color: red;
+}
+@media only screen and (max-width: 600px) {
+  .redBox {
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+  }
+  .greyBox {
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+  }
+  .yellowBox {
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+  }
+  .greenBox {
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+  }
+  .letterBox {
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+  }
+}
