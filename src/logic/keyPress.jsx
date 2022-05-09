@@ -17,7 +17,6 @@ function handleKeyPress(e) {
         dispatch(actions.clearInvalidWordErr(state.currentRow));
         dispatch(changeRowClassName("letterBox"));        
         const isBackSpace = e.key === "Backspace";
-        console.log("keyPress", e)
         let word = state.wordArray.slice(state.currentRow*state.boardSize.width,state.currentRow*state.boardSize.width + state.boardSize.width).join('').toLowerCase();
         const isEndOfLine = word.length === state.boardSize.width;
         const lineNum = Math.floor(state.letterCount / state.boardSize.width);

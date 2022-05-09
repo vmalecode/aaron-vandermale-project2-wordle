@@ -25,15 +25,12 @@ function gradeRow() {
         for (let i = start; i <= end; i++) {
             keyBoardIdx = alphabet.indexOf(word[j].toUpperCase())
             if (output[j] === "greenBox") {
-                console.log(`Change key color ${keyBoardIdx} to green`)
                 dispatch(actions.changeKeyColor(keyBoardIdx, "key green"))
             }
             else if (output[j] === "yellowBox" && keyClassNames[keyBoardIdx] !== "key green") {
-                console.log(`Change key color ${keyBoardIdx} to yellow`)
                 dispatch(actions.changeKeyColor(keyBoardIdx, "key yellow"))
             }
             else if(keyClassNames[keyBoardIdx] !== "key green" && keyClassNames[keyBoardIdx] !== "key yellow"){
-                console.log(`Change key color ${keyBoardIdx} to grey`)
                 dispatch(actions.changeKeyColor(keyBoardIdx, "key grey"))
             }
             j++;
