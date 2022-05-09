@@ -28,11 +28,11 @@ function gradeRow() {
                 console.log(`Change key color ${keyBoardIdx} to green`)
                 dispatch(actions.changeKeyColor(keyBoardIdx, "key green"))
             }
-            else if (output[j] === "yellowBox" && keyClassNames[keyBoardIdx] !== "greenBox") {
+            else if (output[j] === "yellowBox" && keyClassNames[keyBoardIdx] !== "key green") {
                 console.log(`Change key color ${keyBoardIdx} to yellow`)
                 dispatch(actions.changeKeyColor(keyBoardIdx, "key yellow"))
             }
-            else if(keyClassNames[keyBoardIdx] !== "greenBox" && keyClassNames[keyBoardIdx] !== "yellowBox"){
+            else if(keyClassNames[keyBoardIdx] !== "key green" && keyClassNames[keyBoardIdx] !== "key yellow"){
                 console.log(`Change key color ${keyBoardIdx} to grey`)
                 dispatch(actions.changeKeyColor(keyBoardIdx, "key grey"))
             }
