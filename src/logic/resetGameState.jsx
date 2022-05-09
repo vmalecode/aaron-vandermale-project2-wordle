@@ -16,6 +16,7 @@ function resetGameState() {
         dispatch(actions.resetWinCondition());
         dispatch(actions.clearInvalidWordErr());
         dispatch(actions.clearWordTooShortErr());
+        dispatch(actions.resetKeyboard());
         let answers = words.FIVE_LETTER_WORDS;
         const param = state.boardSize.name;
         if(param ==="easy") {

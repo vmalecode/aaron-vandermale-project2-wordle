@@ -21,6 +21,16 @@
     text-align: center;
     align-items: center;
     margin: 3px;
+    user-select: none;
+}
+.key.green {
+    background-color: green;
+}
+.key.yellow {
+    background-color: yellow;
+}
+.key.grey {
+    background-color: grey;
 }
 .key:active{
     background-color: rgb(129, 133, 137);

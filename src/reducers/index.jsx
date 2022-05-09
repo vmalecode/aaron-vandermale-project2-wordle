@@ -11,6 +11,7 @@ import answerReducer from "./answerReducer";
 import currentPageReducer from "./currentPageReducer";
 import gameOverReducer from "./gameOverReducer";
 import winConditionReducer from "./winConditionReducer";
+import keyboardColorReducer from "./keyboardColorReducer";
 
 const allReducer = combineReducers({
     keyPress : keyPressReducer,
@@ -25,6 +26,7 @@ const allReducer = combineReducers({
     answer : answerReducer,
     page: currentPageReducer,
     winCondition: winConditionReducer,   
+    keyboardColor: keyboardColorReducer,
 });
 
 export default allReducer;

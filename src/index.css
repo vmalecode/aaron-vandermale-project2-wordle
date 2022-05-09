@@ -1,4 +1,6 @@
-
+:root {
+  user-select: none;
+}
 .Grid{
   display:grid;
   grid-template-columns: 1fr;

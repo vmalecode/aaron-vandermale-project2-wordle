@@ -148,3 +148,19 @@ export const decCount = () => {
         type: actions.DEC_COUNT,
     }
 }
+
+export const changeKeyColor = (index,keyClassName) => {
+    return {
+        type: actions.CHANGE_KEY_COLOR,
+        payload: {
+            index: index,
+            keyClassName: keyClassName
+        }
+    }
+}
+
+export const resetKeyboard = () => {
+    return {
+        type: actions.RESET_KEYBOARD
+    }
+}
