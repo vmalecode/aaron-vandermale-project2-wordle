@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.17.3",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.9",
+    "save": "^2.5.0",
     "@react-icons/all-files": "^4.1.0",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.3",
@@ -42,9 +48,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "redux-devtools-extension": "^2.13.9",
-    "save": "^2.5.0"
   }
 }
