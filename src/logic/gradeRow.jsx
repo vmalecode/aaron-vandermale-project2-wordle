@@ -24,10 +24,10 @@ function gradeRow() {
         j = 0
         for (let i = start; i <= end; i++) {
             keyBoardIdx = alphabet.indexOf(word[j].toUpperCase())
-            if (output[j] === "greenBox") {
+            if (output[j] === "letterBox green") {
                 dispatch(actions.changeKeyColor(keyBoardIdx, "key green"))
             }
-            else if (output[j] === "yellowBox" && keyClassNames[keyBoardIdx] !== "key green") {
+            else if (output[j] === "letterBox yellow" && keyClassNames[keyBoardIdx] !== "key green") {
                 dispatch(actions.changeKeyColor(keyBoardIdx, "key yellow"))
             }
             else if(keyClassNames[keyBoardIdx] !== "key green" && keyClassNames[keyBoardIdx] !== "key yellow"){
@@ -35,7 +35,7 @@ function gradeRow() {
             }
             j++;
         }
-        let correctLetters = output.filter(className => className === "greenBox").length;
+        let correctLetters = output.filter(className => className === "letterBox green").length;
         if (correctLetters === state.boardSize.width) {
             dispatch(actions.setGameOver());
             dispatch(actions.setWinCondition());

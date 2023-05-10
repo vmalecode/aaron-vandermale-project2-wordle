@@ -1,9 +1,9 @@
 export default function gradeWord(answer,word) {
-    let output = Array.apply(null, Array(answer.length)).map(function () {return "greyBox"})
+    let output = Array.apply(null, Array(answer.length)).map(function () {return "letterBox grey"})
     for(let i in word) {
         let letter = word[i];
         if(letter === answer[i]) {
-            output[i] = 'greenBox';
+            output[i] = 'letterBox green';
         }
     }
 
@@ -21,11 +21,11 @@ export default function gradeWord(answer,word) {
         let letter = word[i];
         if(answer.includes(letter)) {
             let totalAnswerOccurrences = answer.split(letter).length - 1
-            let greenAnswerOccurrences = getColorAnswerOccurrences(output,letter,word,'greenBox',word.length);
-            let yellowAnswerOccurrences = getColorAnswerOccurrences(output,letter,word,'yellowBox',i);
+            let greenAnswerOccurrences = getColorAnswerOccurrences(output,letter,word,'letterBox green',word.length);
+            let yellowAnswerOccurrences = getColorAnswerOccurrences(output,letter,word,'letterBox yellow',i);
             // (Greens + previousYellows) < wordOccurrencesSoFar
-            if((((yellowAnswerOccurrences + greenAnswerOccurrences) < totalAnswerOccurrences)) && output[i] !== 'greenBox') {
-                output[i] = 'yellowBox';
+            if((((yellowAnswerOccurrences + greenAnswerOccurrences) < totalAnswerOccurrences)) && output[i] !== 'letterBox green') {
+                output[i] = 'letterBox yellow';
             }
         }
     }

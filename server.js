@@ -3,9 +3,10 @@ const express = require('express')
 const path = require("path");
 const app = express()
 const dotenv = require("dotenv");
-
-const PORT = process.env.PORT || 8000;
 dotenv.config();
+const PORT = process.env.PORT || 7000;
+
+
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
 // serve the frontend
